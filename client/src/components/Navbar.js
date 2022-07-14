@@ -3,7 +3,7 @@ import { AppBar, Toolbar, Typography } from "@mui/material";
 
 const Navbar = () => {
     return (
-        <AppBar>
+        <AppBar sx={{ backgroundColor: "#000" }}>
             <Toolbar
                 disableGutters
                 sx={{ justifyContent: "space-between", mx: 7 }}

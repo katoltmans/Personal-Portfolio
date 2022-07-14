@@ -1,18 +1,15 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import AppBar from "@mui/material/AppBar";
 import Welcome from "./components/Welcome";
-import Navbar from "./components/Navbar";
+import PortfolioView from "./views/PortfolioView";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Fade>
-                    <Navbar />
-                </Fade>
                 <Routes>
-                    <Route path="/" element={<Welcome />} />
+                    <Route path="/" element={<Welcome />} default />
+                    <Route path="/portfolio" element={<PortfolioView />} />
                 </Routes>
             </div>
         </BrowserRouter>
