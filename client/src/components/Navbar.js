@@ -3,6 +3,15 @@ import { AppBar, Toolbar, Link, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
+    // const styles = {
+    //     Typography: {
+    //         color: "#fff",
+    //         "&:hover": {
+    //             color: "#5ce2e2",
+    //         },
+    //     },
+    // };
+
     return (
         <AppBar sx={{ backgroundColor: "#000" }}>
             <Toolbar
@@ -22,7 +31,7 @@ const Navbar = () => {
                 <Typography variant="h6" color="#fff">
                     <Link
                         component={RouterLink}
-                        to="#about"
+                        to="#skills"
                         color="#fff"
                         underline="none"
                     >
@@ -32,7 +41,7 @@ const Navbar = () => {
                 <Typography variant="h6" color="#fff">
                     <Link
                         component={RouterLink}
-                        to="#education"
+                        to="#projects"
                         color="#fff"
                         underline="none"
                     >
@@ -49,11 +58,25 @@ const Navbar = () => {
                         Education
                     </Link>
                 </Typography>
-                <Typography variant="h6" color="inherit">
-                    Experience
+                <Typography variant="h6" color="#fff">
+                    <Link
+                        component={RouterLink}
+                        to="#experience"
+                        color="#fff"
+                        underline="none"
+                    >
+                        Experience
+                    </Link>
                 </Typography>
-                <Typography variant="h6" color="inherit">
-                    Contact
+                <Typography variant="h6" color="#fff">
+                    <Link
+                        component={RouterLink}
+                        to="#contact"
+                        color="#fff"
+                        underline="none"
+                    >
+                        Contact
+                    </Link>
                 </Typography>
             </Toolbar>
         </AppBar>

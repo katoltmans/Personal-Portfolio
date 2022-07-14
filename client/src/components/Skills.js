@@ -6,7 +6,12 @@ const Skills = () => {
     return (
         <Box sx={{ p: 5, pt: 10 }}>
             <a id="skills" />
-            <Typography>Skills</Typography>
+            <Typography
+                variant="h3"
+                sx={{ color: "#5ce2e2", mt: 5, fontWeight: "bold" }}
+            >
+                Skills
+            </Typography>
             <p>
                 I am a coding boot camp graduate who joined the world of coding
                 after retiring from teaching and fitness. I have experience in

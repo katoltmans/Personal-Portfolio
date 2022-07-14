@@ -2,15 +2,15 @@ import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
-const About = () => {
+const Experience = () => {
     return (
         <Grid sx={{ p: 5, pt: 10 }}>
-            <a id="about" />
+            <a id="experience" />
             <Typography
                 variant="h3"
                 sx={{ color: "#5ce2e2", mt: 5, fontWeight: "bold" }}
             >
-                About Me
+                Experience
             </Typography>
             <p>
                 I am a coding boot camp graduate who joined the world of coding
@@ -41,4 +41,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Experience;
