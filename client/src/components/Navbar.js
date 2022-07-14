@@ -1,5 +1,6 @@
 import React from "react";
-import { AppBar, Toolbar, Typography } from "@mui/material";
+import { AppBar, Toolbar, Link, Typography } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
@@ -8,17 +9,45 @@ const Navbar = () => {
                 disableGutters
                 sx={{ justifyContent: "space-between", mx: 7 }}
             >
-                <Typography variant="h6" color="inherit">
-                    About
+                <Typography variant="h6" color="#fff">
+                    <Link
+                        component={RouterLink}
+                        to="#about"
+                        color="#fff"
+                        underline="none"
+                    >
+                        About
+                    </Link>
                 </Typography>
-                <Typography variant="h6" color="inherit">
-                    Skills
+                <Typography variant="h6" color="#fff">
+                    <Link
+                        component={RouterLink}
+                        to="#about"
+                        color="#fff"
+                        underline="none"
+                    >
+                        Skills
+                    </Link>
                 </Typography>
-                <Typography variant="h6" color="inherit">
-                    Projects
+                <Typography variant="h6" color="#fff">
+                    <Link
+                        component={RouterLink}
+                        to="#education"
+                        color="#fff"
+                        underline="none"
+                    >
+                        Projects
+                    </Link>
                 </Typography>
-                <Typography variant="h6" color="inherit">
-                    Education
+                <Typography variant="h6" color="#fff">
+                    <Link
+                        component={RouterLink}
+                        to="#education"
+                        color="#fff"
+                        underline="none"
+                    >
+                        Education
+                    </Link>
                 </Typography>
                 <Typography variant="h6" color="inherit">
                     Experience
