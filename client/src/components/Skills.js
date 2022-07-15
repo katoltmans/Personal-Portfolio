@@ -28,14 +28,13 @@ const Skills = () => {
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
-                    // Source: Photo by eberhard grossgasteiger: https://www.pexels.com/photo/canion-mountains-on-night-sky-2098428/</React.Fragment>
+                    // Image Source: Photo by eberhard grossgasteiger: https://www.pexels.com/photo/canion-mountains-on-night-sky-2098428/</React.Fragment>
                 }}
             >
                 <Typography
                     variant="h3"
                     sx={{
                         color: "#5ce2e2",
-                        my: 3,
                         fontWeight: "bold",
                         textShadow:
                             "1px 1px 1px #919191, 1px 2px 1px #919191,1px 3px 1px #919191",
@@ -43,7 +42,7 @@ const Skills = () => {
                 >
                     Skills
                 </Typography>
-                <Box sx={{ color: "#fff" }}>
+                <Box sx={{ color: "#fff", my: 7 }}>
                     <Grid container spacing={10} sx={{ p: 2 }}>
                         <Grid item xs={5} sx={leftColStyle}>
                             Languages

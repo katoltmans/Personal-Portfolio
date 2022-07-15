@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Fade, Link, Paper, Typography } from "@mui/material";
+import { Button, Fade, Link, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import { Box } from "@mui/system";
 
@@ -41,7 +41,7 @@ const Welcome = () => {
                             underline="none"
                             sx={{ color: "#000" }}
                         >
-                            Please Enter My Portfolio
+                            Welcome To My Portfolio
                         </Link>
                     </Button>
                 </Box>
