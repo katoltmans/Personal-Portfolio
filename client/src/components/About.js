@@ -18,13 +18,24 @@ const About = () => {
                     variant="h3"
                     sx={{
                         color: "#5ce2e2",
-                        my: 3,
+                        mt: 3,
                         fontWeight: "bold",
                         textShadow:
                             "1px 1px 1px #919191, 1px 2px 1px #919191,1px 3px 1px #919191",
                     }}
                 >
-                    About Me
+                    About Kat Oltmans
+                </Typography>
+                <Typography
+                    variant="h6"
+                    sx={{
+                        mb: 3,
+                        color: "#5ce2e2",
+                        fontWeight: "bold",
+                        textShadow: "1px 1px 1px #777",
+                    }}
+                >
+                    (She/Her)
                 </Typography>
                 <Card sx={{ display: "flex", mx: 10 }}>
                     <CardMedia

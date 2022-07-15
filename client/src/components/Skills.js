@@ -24,6 +24,10 @@ const Skills = () => {
                     p: 5,
                     pt: 10,
                     backgroundImage: "url('/imgs/nightSkySection.jpg')",
+                    backgroundAttachment: "fixed",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
                     // Source: Photo by eberhard grossgasteiger: https://www.pexels.com/photo/canion-mountains-on-night-sky-2098428/</React.Fragment>
                 }}
             >
