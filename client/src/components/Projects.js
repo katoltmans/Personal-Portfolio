@@ -8,7 +8,13 @@ const Projects = () => {
             <a id="projects" />
             <Typography
                 variant="h3"
-                sx={{ color: "#5ce2e2", mt: 5, fontWeight: "bold" }}
+                sx={{
+                    color: "#5ce2e2",
+                    mt: 5,
+                    fontWeight: "bold",
+                    textShadow:
+                        "1px 1px 1px #919191, 1px 2px 1px #919191,1px 3px 1px #919191",
+                }}
             >
                 Projects
             </Typography>

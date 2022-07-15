@@ -10,7 +10,7 @@ import Skills from "../components/Skills";
 
 const PortfolioView = () => {
     return (
-        <Stack spacing={2}>
+        <Stack spacing={1}>
             <Navbar />
             <About />
             <Skills />

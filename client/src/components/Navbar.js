@@ -1,26 +1,27 @@
 import React from "react";
 import { AppBar, Toolbar, Link, Typography } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
-    // const styles = {
-    //     Typography: {
-    //         color: "#fff",
-    //         "&:hover": {
-    //             color: "#5ce2e2",
-    //         },
-    //     },
-    // };
+    const styles = {
+        Typography: {
+            color: "#fff",
+            "&:hover": {
+                color: "#5ce2e2",
+            },
+        },
+    };
 
     return (
-        <AppBar sx={{ backgroundColor: "#000" }}>
+        <AppBar sx={{ backgroundColor: "#191917" }}>
             <Toolbar
                 disableGutters
                 sx={{ justifyContent: "space-between", mx: 7 }}
             >
                 <Typography variant="h6" color="#fff">
                     <Link
-                        component={RouterLink}
+                        component={HashLink}
                         to="#about"
                         color="#fff"
                         underline="none"
@@ -30,7 +31,7 @@ const Navbar = () => {
                 </Typography>
                 <Typography variant="h6" color="#fff">
                     <Link
-                        component={RouterLink}
+                        component={HashLink}
                         to="#skills"
                         color="#fff"
                         underline="none"
@@ -40,7 +41,7 @@ const Navbar = () => {
                 </Typography>
                 <Typography variant="h6" color="#fff">
                     <Link
-                        component={RouterLink}
+                        component={HashLink}
                         to="#projects"
                         color="#fff"
                         underline="none"
@@ -50,7 +51,7 @@ const Navbar = () => {
                 </Typography>
                 <Typography variant="h6" color="#fff">
                     <Link
-                        component={RouterLink}
+                        component={HashLink}
                         to="#education"
                         color="#fff"
                         underline="none"
@@ -60,7 +61,7 @@ const Navbar = () => {
                 </Typography>
                 <Typography variant="h6" color="#fff">
                     <Link
-                        component={RouterLink}
+                        component={HashLink}
                         to="#experience"
                         color="#fff"
                         underline="none"
@@ -70,7 +71,7 @@ const Navbar = () => {
                 </Typography>
                 <Typography variant="h6" color="#fff">
                     <Link
-                        component={RouterLink}
+                        component={HashLink}
                         to="#contact"
                         color="#fff"
                         underline="none"
