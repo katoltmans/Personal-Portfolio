@@ -1,20 +1,28 @@
-import {
-    TableBody,
-    TableCell,
-    TableContainer,
-    TableRow,
-    Typography,
-} from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
 const Skills = () => {
+    const leftColStyle = {
+        fontWeight: "bold",
+        fontSize: "25px",
+        textAlign: "right",
+        justifyContent: "center",
+    };
+
+    const rightColStyle = {
+        textAlign: "left",
+        verticalAlign: "center",
+        fontSize: "25px",
+    };
+
     return (
         <React.Fragment>
             <a id="skills" />
             <Box
                 sx={{
                     p: 5,
+                    pt: 10,
                     backgroundImage: "url('/imgs/nightSkySection.jpg')",
                     // Source: Photo by eberhard grossgasteiger: https://www.pexels.com/photo/canion-mountains-on-night-sky-2098428/</React.Fragment>
                 }}
@@ -31,97 +39,49 @@ const Skills = () => {
                 >
                     Skills
                 </Typography>
-                <TableContainer>
-                    <TableBody>
-                        <TableRow style={{ width: "100%" }}>
-                            <TableCell
-                                sx={{
-                                    color: "#5ce2e2",
-                                    fontWeight: "bold",
-                                    fontSize: "25px",
-                                    borderBottom: "none",
-                                }}
-                            >
-                                Languages
-                            </TableCell>
-                            <TableCell
-                                sx={{ color: "#5ce2e2", borderBottom: "none" }}
-                            >
-                                JavaScript (ES5 and ES6), Python, HTML, HTML5,
-                                CSS
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell
-                                sx={{
-                                    color: "#5ce2e2",
-                                    fontWeight: "bold",
-                                    fontSize: "25px",
-                                    borderBottom: "none",
-                                }}
-                            >
-                                Frameworks/Libraries
-                            </TableCell>
-                            <TableCell
-                                sx={{ color: "#5ce2e2", borderBottom: "none" }}
-                            >
-                                React, Express, Node.js, Flask, AJAX, RESTful
-                                APIs, Material UI, Bootstrap
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell
-                                sx={{
-                                    color: "#5ce2e2",
-                                    fontWeight: "bold",
-                                    fontSize: "25px",
-                                    borderBottom: "none",
-                                }}
-                            >
-                                Databases
-                            </TableCell>
-                            <TableCell
-                                sx={{ color: "#5ce2e2", borderBottom: "none" }}
-                            >
-                                MongoDB, MySQL
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell
-                                sx={{
-                                    color: "#5ce2e2",
-                                    fontWeight: "bold",
-                                    fontSize: "25px",
-                                    borderBottom: "none",
-                                }}
-                            >
-                                Version Control Systems
-                            </TableCell>
-                            <TableCell
-                                sx={{ color: "#5ce2e2", borderBottom: "none" }}
-                            >
-                                Git, GitHub
-                            </TableCell>
-                        </TableRow>
-                        <TableRow>
-                            <TableCell
-                                sx={{
-                                    color: "#5ce2e2",
-                                    fontWeight: "bold",
-                                    fontSize: "25px",
-                                    borderBottom: "none",
-                                }}
-                            >
-                                Tools
-                            </TableCell>
-                            <TableCell
-                                sx={{ color: "#5ce2e2", borderBottom: "none" }}
-                            >
-                                AWS, Firebase, Slack, Bcrypt
-                            </TableCell>
-                        </TableRow>
-                    </TableBody>
-                </TableContainer>
+                <Box sx={{ color: "#fff" }}>
+                    <Grid container spacing={10} sx={{ p: 2 }}>
+                        <Grid item xs={5} sx={leftColStyle}>
+                            Languages
+                        </Grid>
+                        <Grid item xs={7} sx={rightColStyle}>
+                            JavaScript (ES5 and ES6), Python, HTML, HTML5, CSS
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={10} sx={{ p: 2 }}>
+                        <Grid item xs={5} sx={leftColStyle}>
+                            Frameworks / Libraries
+                        </Grid>
+                        <Grid item xs={7} sx={rightColStyle}>
+                            React, Express, Node.js, Flask, AJAX, RESTful APIs,
+                            Material UI, Bootstrap
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={10} sx={{ p: 2 }}>
+                        <Grid item xs={5} sx={leftColStyle}>
+                            Databases
+                        </Grid>
+                        <Grid item xs={7} sx={rightColStyle}>
+                            MongoDB, MySQL
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={10} sx={{ p: 2 }}>
+                        <Grid item xs={5} sx={leftColStyle}>
+                            Version Control Systems
+                        </Grid>
+                        <Grid item xs={7} sx={rightColStyle}>
+                            Git, GitHub
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={10} sx={{ p: 2 }}>
+                        <Grid item xs={5} sx={leftColStyle}>
+                            Tools
+                        </Grid>
+                        <Grid item xs={7} sx={rightColStyle}>
+                            AWS, Firebase, Slack, Bcrypt
+                        </Grid>
+                    </Grid>
+                </Box>
             </Box>
         </React.Fragment>
     );

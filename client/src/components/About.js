@@ -26,17 +26,20 @@ const About = () => {
                 >
                     About Me
                 </Typography>
-                <Card sx={{ display: "flex", mx: 40 }}>
+                <Card sx={{ display: "flex", mx: 10 }}>
                     <CardMedia
                         component="img"
-                        sx={{ width: 200 }}
+                        sx={{ width: "200px" }}
                         image="/imgs/ProfilePic.jpg"
-                        alt="profile picture"
+                        alt="Kat Oltmans profile picture"
                     />
                     <CardContent sx={{ py: 3, px: 10 }}>
-                        <Grid container direction="column" spacing={4}>
+                        <Grid container direction="column" spacing={2}>
                             <Grid item>
-                                <Typography variant="body1" gutterBottom>
+                                <Typography
+                                    variant="h6"
+                                    sx={{ mb: 2, fontWeight: "normal" }}
+                                >
                                     I am a coding boot camp graduate who joined
                                     the world of coding after retiring from
                                     teaching and fitness. I have experience in
@@ -48,9 +51,11 @@ const About = () => {
                             </Grid>
                             <Grid item>
                                 <Typography
-                                    variant="body1"
-                                    sx={{ mb: 2 }}
-                                    style={{ whiteSpace: "pre-wrap" }}
+                                    variant="h6"
+                                    sx={{ mb: 2, fontWeight: "normal" }}
+                                    style={{
+                                        whiteSpace: "pre-wrap",
+                                    }}
                                 >
                                     After teaching remotely for a year, I came
                                     to appreciate the doors tech opens to the
@@ -69,7 +74,8 @@ const About = () => {
                             </Grid>
                             <Grid item>
                                 <Typography
-                                    variant="body1"
+                                    variant="h6"
+                                    sx={{ fontWeight: "normal" }}
                                     style={{ whiteSpace: "pre-wrap" }}
                                 >
                                     Upon retiring from teaching, I began to
