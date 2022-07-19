@@ -43,7 +43,12 @@ const Skills = () => {
                     Skills
                 </Typography>
                 <Box sx={{ color: "#fff", my: 7 }}>
-                    <Grid container spacing={10} sx={{ p: 2 }}>
+                    <Grid
+                        container
+                        justifyContent="center"
+                        spacing={10}
+                        sx={{ p: 2 }}
+                    >
                         <Grid item xs={5} sx={leftColStyle}>
                             Languages
                         </Grid>

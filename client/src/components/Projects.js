@@ -12,10 +12,11 @@ import React from "react";
 const Projects = () => {
     const projectTitleStyle = {
         fontWeight: "bold",
-        color: "#5ce2e2",
+        color: "#000",
     };
     const projectSubtitleStyle = {
         color: "#919191",
+        fontSize: "12px",
     };
     const projectLinkStyle = {
         color: "#5ce2e2",
@@ -23,6 +24,7 @@ const Projects = () => {
             color: "#00b0ba",
         },
         textDecoration: "none",
+        fontWeight: "bold",
     };
 
     return (
@@ -41,8 +43,8 @@ const Projects = () => {
                     Projects
                 </Typography>
                 <Grid container spacing={5}>
-                    <Grid item xs={6}>
-                        <Card sx={{ p: 3, maxwidth: 345, height: "90%" }}>
+                    <Grid item xs={12} sm={6}>
+                        <Card sx={{ p: 2, maxwidth: 345, height: "90%" }}>
                             <CardMedia
                                 component="img"
                                 height="400"
@@ -64,17 +66,27 @@ const Projects = () => {
                                     and tricks using: Python, Flask, React.js,
                                     and Material UI
                                 </Typography>
-                                <a
-                                    href="https://github.com/katoltmans/Homemade-Hacks"
-                                    style={projectLinkStyle}
-                                >
-                                    GitHub
-                                </a>
+
+                                <Grid container alignItems="bottom">
+                                    <Grid item xs={6}>
+                                        <a href="" style={projectLinkStyle}>
+                                            {/* Homemade Hacks Site */}
+                                        </a>
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <a
+                                            href="https://github.com/katoltmans/Homemade-Hacks"
+                                            style={projectLinkStyle}
+                                        >
+                                            GitHub
+                                        </a>
+                                    </Grid>
+                                </Grid>
                             </CardContent>
                         </Card>
                     </Grid>
-                    <Grid item xs={6}>
-                        <Card sx={{ p: 3, maxwidth: 345, height: "90%" }}>
+                    <Grid item xs={12} sm={6}>
+                        <Card sx={{ p: 2, maxwidth: 345, height: "90%" }}>
                             <CardMedia
                                 component="img"
                                 height="400"
@@ -96,12 +108,24 @@ const Projects = () => {
                                     attend, indicate attendance intention,
                                     comment, and map distance to event.
                                 </Typography>
-                                <a
-                                    href="https://github.com/katoltmans/Find-Me-in-Events"
-                                    style={projectLinkStyle}
-                                >
-                                    GitHub
-                                </a>
+                                <Grid container>
+                                    <Grid item xs={6}>
+                                        <a
+                                            href="http://3.86.87.174/"
+                                            style={projectLinkStyle}
+                                        >
+                                            Join In Site
+                                        </a>
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <a
+                                            href="https://github.com/katoltmans/Find-Me-in-Events"
+                                            style={projectLinkStyle}
+                                        >
+                                            GitHub
+                                        </a>
+                                    </Grid>
+                                </Grid>
                             </CardContent>
                         </Card>
                     </Grid>

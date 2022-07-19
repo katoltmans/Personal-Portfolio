@@ -63,6 +63,10 @@ const Contact = () => {
                     </a>
                 </Grid>
             </Grid>
+            <Typography sx={{ color: "#5ce2e2", fontSize: "14px", mb: 5 }}>
+                Designed and developed by Kat Oltmans using React and Material
+                UI
+            </Typography>
         </Box>
     );
 };
