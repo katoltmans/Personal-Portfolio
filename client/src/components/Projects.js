@@ -1,17 +1,38 @@
-import { Typography } from "@mui/material";
+import {
+    Card,
+    CardContent,
+    CardMedia,
+    Grid,
+    Paper,
+    Typography,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
 const Projects = () => {
+    const projectTitleStyle = {
+        fontWeight: "bold",
+        color: "#5ce2e2",
+    };
+    const projectSubtitleStyle = {
+        color: "#919191",
+    };
+    const projectLinkStyle = {
+        color: "#5ce2e2",
+        "&:hover": {
+            color: "#00b0ba",
+        },
+        textDecoration: "none",
+    };
+
     return (
-        <>
-            <a id="projects" />
-            <Box sx={{ p: 5, pt: 10 }}>
+        <a id="projects">
+            <Box sx={{ p: 5, pt: 5 }}>
                 <Typography
                     variant="h3"
                     sx={{
                         color: "#5ce2e2",
-                        mt: 5,
+                        my: 5,
                         fontWeight: "bold",
                         textShadow:
                             "1px 1px 1px #919191, 1px 2px 1px #919191,1px 3px 1px #919191",
@@ -19,34 +40,74 @@ const Projects = () => {
                 >
                     Projects
                 </Typography>
-                <p>
-                    I am a coding boot camp graduate who joined the world of
-                    coding after retiring from teaching and fitness. I have
-                    experience in motivating teams of students, organizing and
-                    tracking the progress of 125+ students simultaneously, and
-                    ensuring deadlines are regularly met within given timelines.{" "}
-                </p>
-                <p>
-                    After teaching remotely for a year, I came to appreciate the
-                    doors tech opens to the world and love the infinite
-                    possibilities it can provide to aid in the advancement of
-                    society. In 2020, I was tasked with the challenge of
-                    creating an online classroom environment with very little
-                    technical experience or guidance while managing my online
-                    students throughout the year. This experience opened my eyes
-                    to my ability to quickly acquire computer skills and the
-                    role tech can play in shaping the next generation.
-                </p>
-                <p>
-                    Upon retiring from teaching, I began to learn C# in
-                    conjunction with the Unity engine, but found myself wanting
-                    to know more. I took a C# class through Coursera and was
-                    hooked. I recently completed the a boot camp with Coding
-                    Dojo to learn full stack web development using Python and
-                    MERN.
-                </p>
+                <Grid container spacing={5}>
+                    <Grid item xs={6}>
+                        <Card sx={{ p: 3, maxwidth: 345 }}>
+                            <CardMedia
+                                component="img"
+                                height="400"
+                                image="/imgs/JoinIn.png"
+                                alt="join In Project"
+                            />
+                            <CardContent>
+                                <Typography variant="H6" sx={projectTitleStyle}>
+                                    Homemade Hacks
+                                </Typography>
+                                <Typography
+                                    variant="subtitle1"
+                                    sx={projectSubtitleStyle}
+                                >
+                                    Personal Project
+                                </Typography>
+                                <Typography>
+                                    A website to create and view household tips
+                                    and tricks using: Python, Flask, React.js,
+                                    and Material UI
+                                </Typography>
+                                <a
+                                    href="https://github.com/katoltmans/Homemade-Hacks"
+                                    style={projectLinkStyle}
+                                >
+                                    GitHub
+                                </a>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Card sx={{ p: 3, maxwidth: 345 }}>
+                            <CardMedia
+                                component="img"
+                                height="400"
+                                image="/imgs/JoinIn.png"
+                                alt="join In Project"
+                            />
+                            <CardContent>
+                                <Typography variant="H6" sx={projectTitleStyle}>
+                                    Join In
+                                </Typography>
+                                <Typography
+                                    variant="subtitle1"
+                                    sx={projectSubtitleStyle}
+                                >
+                                    Group Project
+                                </Typography>
+                                <Typography>
+                                    A MERN-based app to create/find events to
+                                    attend, indicate attendance intention,
+                                    comment, and map distance to event.
+                                </Typography>
+                                <a
+                                    href="https://github.com/katoltmans/Find-Me-in-Events"
+                                    style={projectLinkStyle}
+                                >
+                                    GitHub
+                                </a>
+                            </CardContent>
+                        </Card>
+                    </Grid>
+                </Grid>
             </Box>
-        </>
+        </a>
     );
 };
 

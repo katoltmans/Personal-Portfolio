@@ -1,15 +1,12 @@
 import React from "react";
 import { AppBar, Toolbar, Link, Typography } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
     const styles = {
-        Typography: {
-            color: "#fff",
-            "&:hover": {
-                color: "#5ce2e2",
-            },
+        color: "#fff",
+        "&:hover": {
+            color: "#5ce2e2",
         },
     };
 
@@ -25,6 +22,7 @@ const Navbar = () => {
                         to="#about"
                         color="#fff"
                         underline="none"
+                        sx={styles}
                     >
                         About
                     </Link>
@@ -35,6 +33,7 @@ const Navbar = () => {
                         to="#skills"
                         color="#fff"
                         underline="none"
+                        sx={styles}
                     >
                         Skills
                     </Link>
@@ -45,6 +44,7 @@ const Navbar = () => {
                         to="#projects"
                         color="#fff"
                         underline="none"
+                        sx={styles}
                     >
                         Projects
                     </Link>
@@ -55,6 +55,7 @@ const Navbar = () => {
                         to="#education"
                         color="#fff"
                         underline="none"
+                        sx={styles}
                     >
                         Education
                     </Link>
@@ -65,8 +66,9 @@ const Navbar = () => {
                         to="#experience"
                         color="#fff"
                         underline="none"
+                        sx={styles}
                     >
-                        Experience
+                        Work Experience
                     </Link>
                 </Typography>
                 <Typography variant="h6" color="#fff">
@@ -75,6 +77,7 @@ const Navbar = () => {
                         to="#contact"
                         color="#fff"
                         underline="none"
+                        sx={styles}
                     >
                         Contact
                     </Link>

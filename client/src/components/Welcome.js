@@ -24,6 +24,7 @@ const Welcome = () => {
                         sx={{
                             fontSize: "90px",
                             mb: 2,
+                            WebkitTextStroke: "0.502px #5ce2e2",
                             textShadow: "0 0 15px #5ce2e2",
                             color: "#fff",
                         }}

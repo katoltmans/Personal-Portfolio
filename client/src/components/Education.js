@@ -103,8 +103,7 @@ const Education = () => {
                                 >
                                     University of Colorado
                                 </Typography>
-                                BA in Theater (Graduated with distinction){" "}
-                                <br />
+                                BA in Theatre (With Distinction) <br />
                                 Diploma in Education <br />
                                 Certificate of Applied Business <br />
                                 GPA: 3.785 <br />

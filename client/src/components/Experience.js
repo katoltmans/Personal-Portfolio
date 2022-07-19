@@ -1,49 +1,263 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import Timeline from "@mui/lab/Timeline";
+import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineSeparator from "@mui/lab/TimelineSeparator";
+import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
 
 const Experience = () => {
     return (
-        <Grid sx={{ p: 5, pt: 10 }}>
-            <a id="experience" />
-            <Typography
-                variant="h3"
-                sx={{
-                    color: "#5ce2e2",
-                    mt: 5,
-                    fontWeight: "bold",
-                    textShadow:
-                        "1px 1px 1px #919191, 1px 2px 1px #919191,1px 3px 1px #919191",
-                }}
-            >
-                Experience
-            </Typography>
-            <p>
-                I am a coding boot camp graduate who joined the world of coding
-                after retiring from teaching and fitness. I have experience in
-                motivating teams of students, organizing and tracking the
-                progress of 125+ students simultaneously, and ensuring deadlines
-                are regularly met within given timelines.{" "}
-            </p>
-            <p>
-                After teaching remotely for a year, I came to appreciate the
-                doors tech opens to the world and love the infinite
-                possibilities it can provide to aid in the advancement of
-                society. In 2020, I was tasked with the challenge of creating an
-                online classroom environment with very little technical
-                experience or guidance while managing my online students
-                throughout the year. This experience opened my eyes to my
-                ability to quickly acquire computer skills and the role tech can
-                play in shaping the next generation.
-            </p>
-            <p>
-                Upon retiring from teaching, I began to learn C# in conjunction
-                with the Unity engine, but found myself wanting to know more. I
-                took a C# class through Coursera and was hooked. I recently
-                completed the a boot camp with Coding Dojo to learn full stack
-                web development using Python and MERN.
-            </p>
-        </Grid>
+        <a id="experience">
+            <Box sx={{ p: 5, pt: 5 }}>
+                <Typography
+                    variant="h3"
+                    sx={{
+                        color: "#5ce2e2",
+                        mt: 5,
+                        fontWeight: "bold",
+                        textShadow:
+                            "1px 1px 1px #919191, 1px 2px 1px #919191,1px 3px 1px #919191",
+                    }}
+                >
+                    Work Experience
+                </Typography>
+                <Box sx={{ textAlign: "left" }}>
+                    <Timeline position="alternate">
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot
+                                    variant="outlined"
+                                    sx={{ bgcolor: "#5ce2e2" }}
+                                />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Typography variant="h6" component="span">
+                                    5th Grade Teacher <br />
+                                </Typography>
+                                <Typography
+                                    variant="subtitle1"
+                                    component="span"
+                                    sx={{
+                                        color: "#00b0ba",
+                                        fontWeight: "bold",
+                                    }}
+                                >
+                                    Renaissance Charter School at Crown Point |
+                                    Ocoee, FL | July 2020 - May 2021
+                                </Typography>
+                                <Typography>
+                                    <ul>
+                                        <li>
+                                            Utilized the Schoology learning
+                                            management system to create and
+                                            implement an online learning
+                                            curriculum from scratch while
+                                            teaching 41 students remotely
+                                        </li>
+                                        <li>
+                                            Used Microsoft Office (Excel) to
+                                            create a progress tracking tool for
+                                            students that helped students
+                                            independently track their quarterly
+                                            progress and highlighted
+                                            opportunities to rework assignments.
+                                        </li>
+                                        <li>
+                                            Ran daily zoom meetings to instruct
+                                            students and assess their progress
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot
+                                    variant="outlined"
+                                    sx={{ bgcolor: "#5ce2e2" }}
+                                />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Typography variant="h6" component="span">
+                                    6th Grade Math Teacher <br />
+                                </Typography>
+                                <Typography
+                                    variant="subtitle1"
+                                    component="span"
+                                    sx={{
+                                        color: "#00b0ba",
+                                        fontWeight: "bold",
+                                    }}
+                                >
+                                    Renaissance Charter School at Crown Point |
+                                    Ocoee, FL | July 2018 - July 2020
+                                </Typography>
+                                <Typography sx={{ textAlign: "left" }}>
+                                    <ul>
+                                        <li>
+                                            Managed 125+ students, ensuring
+                                            progress towards meeting Florida
+                                            state standards
+                                        </li>
+                                        <li>
+                                            Planned curriculum to ensure
+                                            deadlines were met to guarantee all
+                                            required standards were covered for
+                                            the school year
+                                        </li>
+                                        <li>
+                                            Engaged in regular communication
+                                            with school administration, parents,
+                                            and students to analyze progress and
+                                            create plans to drive success of
+                                            students in my class, raising the
+                                            percentage pass rate by 6 points
+                                            from the previous pass rate of the
+                                            same students in 5th grade
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot
+                                    variant="outlined"
+                                    sx={{ bgcolor: "#5ce2e2" }}
+                                />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Typography variant="h6" component="span">
+                                    Group Fitness Instructor <br />
+                                </Typography>
+                                <Typography
+                                    variant="subtitle1"
+                                    component="span"
+                                    sx={{
+                                        color: "#00b0ba",
+                                        fontWeight: "bold",
+                                    }}
+                                >
+                                    24 Hour Fitness, Castle Rock Rec Center,
+                                    True Fit, Haka | FL and CO | June 2013 - Nov
+                                    2018
+                                </Typography>
+                                <Typography>
+                                    <ul>
+                                        <li>
+                                            Created and moderated the 24 Hour
+                                            Fitness Central Florida Instructors
+                                            facebook group to foster
+                                            communication between GX instructors
+                                            and ease the process of finding subs
+                                        </li>
+                                        <li>
+                                            Taught a Dance And Sculpt class of
+                                            my own creation that grew much
+                                            interest and participation at Castle
+                                            Rock Rec Center
+                                        </li>
+                                        <li>
+                                            Co-created a week-long fitness camp
+                                            for kids ages 3 - 12, and organized
+                                            a National Dance Day event at Haka!
+                                            Group Fitness.
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot
+                                    variant="outlined"
+                                    sx={{ bgcolor: "#5ce2e2" }}
+                                />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Typography variant="h6" component="span">
+                                    6th Grade Teacher <br />
+                                </Typography>
+                                <Typography
+                                    variant="subtitle1"
+                                    component="span"
+                                    sx={{
+                                        color: "#00b0ba",
+                                        fontWeight: "bold",
+                                    }}
+                                >
+                                    Front Range Christian School | Littleton, CO
+                                    | Aug 2002 - May 2005
+                                </Typography>
+                                <Typography sx={{ textAlign: "left" }}>
+                                    <ul>
+                                        <li>
+                                            Communicated regularly with parents,
+                                            recognizing they were my main
+                                            clientele, to partner in providing
+                                            the best education possible for
+                                            their children
+                                        </li>
+                                        <li>
+                                            Creatively engaged students with
+                                            original lessons including museum
+                                            exhibits, debates, simulations, etc.
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                        <TimelineItem>
+                            <TimelineSeparator>
+                                <TimelineDot
+                                    variant="outlined"
+                                    sx={{ bgcolor: "#5ce2e2" }}
+                                />
+                                <TimelineConnector />
+                            </TimelineSeparator>
+                            <TimelineContent>
+                                <Typography variant="h6" component="span">
+                                    6th Grade Teacher <br />
+                                </Typography>
+                                <Typography
+                                    variant="subtitle1"
+                                    component="span"
+                                    sx={{
+                                        color: "#00b0ba",
+                                        fontWeight: "bold",
+                                    }}
+                                >
+                                    Lasley Elementary School | Lakewood, CO |
+                                    Aug 2001 - June 2002
+                                </Typography>
+                                <Typography>
+                                    <ul>
+                                        <li>
+                                            Worked closely in a team of four
+                                            teachers to plan and ensure student
+                                            learning objectives were met
+                                        </li>
+                                        <li>
+                                            Wrote and produced a child's version
+                                            of "A Midsummer Night's Dream" for
+                                            my struggling readers to pique
+                                            interest in reading
+                                        </li>
+                                    </ul>
+                                </Typography>
+                            </TimelineContent>
+                        </TimelineItem>
+                    </Timeline>
+                </Box>
+            </Box>
+        </a>
     );
 };
 

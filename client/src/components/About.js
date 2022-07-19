@@ -1,13 +1,5 @@
 import React from "react";
-import {
-    Card,
-    CardContent,
-    CardMedia,
-    Grid,
-    Paper,
-    Stack,
-    Typography,
-} from "@mui/material";
+import { Grid, Paper, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
 const About = () => {
@@ -44,50 +36,55 @@ const About = () => {
                             alt="Kat Oltmans profile picture"
                         />
                         <Stack direction="column" spacing={2}>
-                            <Typography
-                                variant="h6"
-                                sx={{ mb: 2, fontWeight: "normal" }}
-                            >
-                                I am a coding boot camp graduate who joined the
-                                world of coding after retiring from teaching and
-                                fitness. I have experience in motivating teams
+                            <Box sx={{ px: 10, py: 1 }}>
+                                <Typography
+                                    variant="h6"
+                                    sx={{ mb: 2, fontWeight: "normal" }}
+                                >
+                                    I am a coding boot camp graduate who joined
+                                    the world of coding after retiring from
+                                    teaching and fitness. After teaching
+                                    remotely for a year, I came to appreciate
+                                    the doors tech opens to the world and love
+                                    the infinite possibilities it can provide to
+                                    aid in the advancement of society.
+                                    {/* I have experience in motivating teams
                                 of students, organizing and tracking the
                                 progress of 125+ students simultaneously, and
                                 ensuring deadlines are regularly met within
-                                given timelines.
-                            </Typography>
-                            <Typography
-                                variant="h6"
-                                sx={{ mb: 2, fontWeight: "normal" }}
-                                style={{
-                                    whiteSpace: "pre-wrap",
-                                }}
-                            >
-                                After teaching remotely for a year, I came to
-                                appreciate the doors tech opens to the world and
-                                love the infinite possibilities it can provide
-                                to aid in the advancement of society. In 2020, I
-                                was tasked with the challenge of creating an
-                                online classroom environment with very little
-                                technical experience or guidance while managing
-                                my online students throughout the year. This
-                                experience opened my eyes to my ability to
-                                quickly acquire computer skills and the role
-                                tech can play in shaping the next generation.
-                            </Typography>
-                            <Typography
-                                variant="h6"
-                                sx={{ fontWeight: "normal" }}
-                                style={{ whiteSpace: "pre-wrap" }}
-                            >
-                                Upon retiring from teaching, I began to learn C#
-                                in conjunction with the Unity engine, but found
-                                myself wanting to know more. I took a C# class
-                                through Coursera and was hooked. I recently
-                                completed the a boot camp with Coding Dojo to
-                                learn full stack web development using Python
-                                and MERN.
-                            </Typography>
+                                given timelines. */}
+                                </Typography>
+                                <Typography
+                                    variant="h6"
+                                    sx={{ mb: 2, fontWeight: "normal" }}
+                                    style={{
+                                        whiteSpace: "pre-wrap",
+                                    }}
+                                >
+                                    In 2020, I was tasked with the challenge of
+                                    creating an online classroom environment
+                                    with very little technical experience or
+                                    guidance, all while managing my online
+                                    students throughout the year. This
+                                    experience opened my eyes to my ability to
+                                    quickly acquire computer skills and the role
+                                    tech can play in shaping the next
+                                    generation.
+                                </Typography>
+                                <Typography
+                                    variant="h6"
+                                    sx={{ fontWeight: "normal" }}
+                                    style={{ whiteSpace: "pre-wrap" }}
+                                >
+                                    Upon retiring from teaching, I began to
+                                    learn C# in conjunction with the Unity
+                                    engine, but found myself wanting to know
+                                    more. I took a C# class through Coursera and
+                                    was hooked. I recently completed the a boot
+                                    camp with Coding Dojo to learn full stack
+                                    web development using Python and MERN.
+                                </Typography>
+                            </Box>
                         </Stack>
                     </Stack>
                 </Paper>
