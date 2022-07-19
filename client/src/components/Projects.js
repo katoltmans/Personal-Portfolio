@@ -42,11 +42,11 @@ const Projects = () => {
                 </Typography>
                 <Grid container spacing={5}>
                     <Grid item xs={6}>
-                        <Card sx={{ p: 3, maxwidth: 345 }}>
+                        <Card sx={{ p: 3, maxwidth: 345, height: "90%" }}>
                             <CardMedia
                                 component="img"
                                 height="400"
-                                image="/imgs/JoinIn.png"
+                                image="/imgs/HomemadeHacks.png"
                                 alt="join In Project"
                             />
                             <CardContent>
@@ -74,7 +74,7 @@ const Projects = () => {
                         </Card>
                     </Grid>
                     <Grid item xs={6}>
-                        <Card sx={{ p: 3, maxwidth: 345 }}>
+                        <Card sx={{ p: 3, maxwidth: 345, height: "90%" }}>
                             <CardMedia
                                 component="img"
                                 height="400"
