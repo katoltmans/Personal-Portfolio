@@ -30,11 +30,14 @@ const About = () => {
                     (She/Her)
                 </Typography>
                 <Paper sx={{ display: "flex", mx: 10 }}>
-                    <Stack direction="row" spacing={5}>
-                        <img
-                            src="/imgs/ProfilePic.jpg"
-                            alt="Kat Oltmans profile picture"
-                        />
+                    <Stack direction={{ xs: "column", sm: "row" }} spacing={5}>
+                        <Box sx={{ maxWidth: "200px" }}>
+                            <img
+                                src="/imgs/ProfilePic.jpg"
+                                alt="Kat Oltmans profile picture"
+                            />
+                        </Box>
+
                         <Stack direction="column" spacing={2}>
                             <Box sx={{ px: 10, py: 1 }}>
                                 <Typography

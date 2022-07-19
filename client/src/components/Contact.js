@@ -24,18 +24,7 @@ const Contact = () => {
                 alignItems="center"
                 sx={{ p: 20, pt: 10 }}
             >
-                <Grid item xs={3}>
-                    <LocationOnIcon
-                        sx={{ color: "#5ce2e2", fontSize: "50px" }}
-                    />
-                    <Typography
-                        variant="caption text"
-                        sx={{ color: "#5ce2e2", mt: 5, fontWeight: "bold" }}
-                    >
-                        Ocoee, FL
-                    </Typography>
-                </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={6} lg={3}>
                     <Link
                         to="javascript:void(0)"
                         onClick={() =>
@@ -48,19 +37,30 @@ const Contact = () => {
                     </Link>
                     <a href=""></a>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={6} lg={3}>
                     <a href="https://www.linkedin.com/in/katoltmans/">
                         <LinkedInIcon
                             sx={{ color: "#5ce2e2", fontSize: "50px" }}
                         />
                     </a>
                 </Grid>
-                <Grid item xs={3}>
+                <Grid item xs={12} sm={6} lg={3}>
                     <a href="https://github.com/katoltmans">
                         <GitHubIcon
                             sx={{ color: "#5ce2e2", fontSize: "50px" }}
                         />
                     </a>
+                </Grid>
+                <Grid item xs={12} sm={6} lg={3}>
+                    <LocationOnIcon
+                        sx={{ color: "#5ce2e2", fontSize: "50px" }}
+                    />
+                    <Typography
+                        variant="caption text"
+                        sx={{ color: "#5ce2e2", mt: 5, fontWeight: "bold" }}
+                    >
+                        Ocoee, FL
+                    </Typography>
                 </Grid>
             </Grid>
             <Typography sx={{ color: "#5ce2e2", fontSize: "14px", mb: 5 }}>

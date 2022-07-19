@@ -68,12 +68,12 @@ const Projects = () => {
                                 </Typography>
 
                                 <Grid container alignItems="bottom">
-                                    <Grid item xs={6}>
+                                    <Grid item xs={12} sm={6}>
                                         <a href="" style={projectLinkStyle}>
                                             {/* Homemade Hacks Site */}
                                         </a>
                                     </Grid>
-                                    <Grid item xs={6}>
+                                    <Grid item xs={12} sm={6}>
                                         <a
                                             href="https://github.com/katoltmans/Homemade-Hacks"
                                             style={projectLinkStyle}
@@ -109,7 +109,7 @@ const Projects = () => {
                                     comment, and map distance to event.
                                 </Typography>
                                 <Grid container>
-                                    <Grid item xs={6}>
+                                    <Grid item xs={12} sm={6}>
                                         <a
                                             href="http://3.86.87.174/"
                                             style={projectLinkStyle}
@@ -117,7 +117,7 @@ const Projects = () => {
                                             Join In Site
                                         </a>
                                     </Grid>
-                                    <Grid item xs={6}>
+                                    <Grid item xs={12} sm={6}>
                                         <a
                                             href="https://github.com/katoltmans/Find-Me-in-Events"
                                             style={projectLinkStyle}

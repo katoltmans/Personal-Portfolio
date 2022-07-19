@@ -24,6 +24,15 @@ const Experience = () => {
                 >
                     Work Experience
                 </Typography>
+                <Typography
+                    variant="subtitle1"
+                    sx={{
+                        color: "#919191",
+                        fontWeight: "bold",
+                    }}
+                >
+                    (Prior to boot camp)
+                </Typography>
                 <Box sx={{ textAlign: "left" }}>
                     <Timeline position="alternate">
                         <TimelineItem>
@@ -59,12 +68,12 @@ const Experience = () => {
                                             teaching 41 students remotely
                                         </li>
                                         <li>
-                                            Used Microsoft Office (Excel) to
-                                            create a progress tracking tool for
-                                            students that helped students
-                                            independently track their quarterly
-                                            progress and highlighted
-                                            opportunities to rework assignments.
+                                            Used Microsoft Excel to create a
+                                            progress tracking tool for students
+                                            that helped students independently
+                                            track their quarterly progress and
+                                            highlighted opportunities to rework
+                                            assignments.
                                         </li>
                                         <li>
                                             Ran daily zoom meetings to instruct
