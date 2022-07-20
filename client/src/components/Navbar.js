@@ -47,7 +47,7 @@ const Navbar = () => {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: "#191917" }}>
+        <AppBar sx={{ backgroundColor: "#191917" }}>
             <Toolbar disableGutters sx={{ mx: 7 }}>
                 <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
                     <IconButton
