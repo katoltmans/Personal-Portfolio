@@ -28,7 +28,8 @@ const Projects = () => {
     };
 
     return (
-        <a id="projects">
+        <>
+            <a id="projects"> </a>
             <Box sx={{ p: 5, pt: 5 }}>
                 <Typography
                     variant="h3"
@@ -69,9 +70,9 @@ const Projects = () => {
 
                                 <Grid container alignItems="bottom">
                                     <Grid item xs={12} sm={6}>
-                                        <a href="" style={projectLinkStyle}>
-                                            {/* Homemade Hacks Site */}
-                                        </a>
+                                        {/* <a href="" style={projectLinkStyle}>
+                                            Homemade Hacks Site
+                                        </a> */}
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
                                         <a
@@ -131,7 +132,7 @@ const Projects = () => {
                     </Grid>
                 </Grid>
             </Box>
-        </a>
+        </>
     );
 };
 

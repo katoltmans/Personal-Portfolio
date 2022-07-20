@@ -2,6 +2,15 @@ import React from "react";
 import { AppBar, Toolbar, Link, Typography } from "@mui/material";
 import { HashLink } from "react-router-hash-link";
 
+const sections = [
+    { title: "About", link: "#about" },
+    { title: "Skills", link: "#skills" },
+    { title: "Projects", link: "#projects" },
+    { title: "Education", link: "#education" },
+    { title: "Work Experience", link: "#experience" },
+    { title: "Contact", link: "#contact" },
+];
+
 const Navbar = () => {
     const styles = {
         color: "#fff",
@@ -10,8 +19,19 @@ const Navbar = () => {
         },
     };
 
+    // const [anchorElNav, setAnchorElNav] =
+    //     (React.useState < null) | (HTMLElement > null);
+
+    // const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    //     setAnchorElNav(event.currentTarget);
+    // };
+
+    // const handleCloseNavMenu = () => {
+    //     setAnchorElNav(null);
+    // };
+
     return (
-        <AppBar sx={{ backgroundColor: "#191917" }}>
+        <AppBar pposition="static" sx={{ backgroundColor: "#191917" }}>
             <Toolbar
                 disableGutters
                 sx={{ justifyContent: "space-between", mx: 7 }}
