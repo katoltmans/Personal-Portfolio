@@ -25,42 +25,52 @@ const Contact = () => {
                 sx={{ p: 20, pt: 10 }}
             >
                 <Grid item xs={12} sm={6} lg={3}>
-                    <Link
-                        to="javascript:void(0)"
-                        onClick={() =>
-                            (window.location = "mailto:katoltmans@gmail.com")
-                        }
+                    <a
+                        href="mailto:katoltmans@gmail.com?subject=Let's Start Talking"
+                        target="_blank"
                     >
                         <EmailIcon
                             sx={{ color: "#5ce2e2", fontSize: "50px" }}
                         />
-                    </Link>
-                    <a href=""></a>
+                    </a>
                 </Grid>
                 <Grid item xs={12} sm={6} lg={3}>
-                    <a href="https://www.linkedin.com/in/katoltmans/">
+                    <a
+                        href="https://www.linkedin.com/in/katoltmans/"
+                        target="_blank"
+                    >
                         <LinkedInIcon
                             sx={{ color: "#5ce2e2", fontSize: "50px" }}
                         />
                     </a>
                 </Grid>
                 <Grid item xs={12} sm={6} lg={3}>
-                    <a href="https://github.com/katoltmans">
+                    <a href="https://github.com/katoltmans" target="_blank">
                         <GitHubIcon
                             sx={{ color: "#5ce2e2", fontSize: "50px" }}
                         />
                     </a>
                 </Grid>
                 <Grid item xs={12} sm={6} lg={3}>
-                    <LocationOnIcon
-                        sx={{ color: "#5ce2e2", fontSize: "50px" }}
-                    />
-                    <Typography
-                        variant="caption text"
-                        sx={{ color: "#5ce2e2", mt: 5, fontWeight: "bold" }}
+                    <a
+                        href="https://goo.gl/maps/nePUeeFUT4yxQaap9"
+                        target="_blank"
+                        style={{ textDecoration: "none" }}
                     >
-                        Ocoee, FL
-                    </Typography>
+                        <LocationOnIcon
+                            sx={{ color: "#5ce2e2", fontSize: "50px" }}
+                        />
+                        <Typography
+                            variant="caption text"
+                            sx={{
+                                color: "#5ce2e2",
+                                mt: 5,
+                                fontWeight: "bold",
+                            }}
+                        >
+                            Ocoee, FL
+                        </Typography>
+                    </a>
                 </Grid>
             </Grid>
             <Typography sx={{ color: "#5ce2e2", fontSize: "14px", mb: 5 }}>

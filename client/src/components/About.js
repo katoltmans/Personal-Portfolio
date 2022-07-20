@@ -29,7 +29,7 @@ const About = () => {
                 >
                     (She/Her)
                 </Typography>
-                <Paper sx={{ display: "flex", mx: 10 }}>
+                <Box sx={{ display: "flex", mx: 10 }}>
                     <Stack direction={{ xs: "column", sm: "row" }} spacing={5}>
                         <Box sx={{ maxWidth: "200px" }}>
                             <img
@@ -90,7 +90,7 @@ const About = () => {
                             </Box>
                         </Stack>
                     </Stack>
-                </Paper>
+                </Box>
                 {/* <Grid container>
                     <Grid item xs={6} sx={{ p: 5 }}>
                         <Paper elevation={2} sx={{ mx: 38, p: 1 }}>
