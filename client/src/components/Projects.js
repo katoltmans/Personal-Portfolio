@@ -45,10 +45,9 @@ const Projects = () => {
                 </Typography>
                 <Grid container spacing={5}>
                     <Grid item xs={12} sm={6}>
-                        <Card sx={{ p: 2, maxwidth: 345, height: "90%" }}>
+                        <Card sx={{ p: 2, height: "90%" }}>
                             <CardMedia
                                 component="img"
-                                height="400"
                                 image="/imgs/HomemadeHacks.png"
                                 alt="join In Project"
                             />
@@ -76,7 +75,8 @@ const Projects = () => {
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
                                         <a
-                                            href="https://github.com/katoltmans/Homemade-Hacks"
+                                            href="https://github.com/katoltmans/Homemade-Hacks/"
+                                            target="_blank"
                                             style={projectLinkStyle}
                                         >
                                             GitHub
@@ -90,7 +90,6 @@ const Projects = () => {
                         <Card sx={{ p: 2, maxwidth: 345, height: "90%" }}>
                             <CardMedia
                                 component="img"
-                                height="400"
                                 image="/imgs/JoinIn.png"
                                 alt="join In Project"
                             />
@@ -112,7 +111,8 @@ const Projects = () => {
                                 <Grid container>
                                     <Grid item xs={12} sm={6}>
                                         <a
-                                            href="http://3.86.87.174/"
+                                            href="http://34.239.132.127/"
+                                            target="_blank"
                                             style={projectLinkStyle}
                                         >
                                             Join In Site
@@ -120,7 +120,8 @@ const Projects = () => {
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
                                         <a
-                                            href="https://github.com/katoltmans/Find-Me-in-Events"
+                                            href="https://github.com/katoltmans/Find-Me-in-Events/"
+                                            target="_blank"
                                             style={projectLinkStyle}
                                         >
                                             GitHub

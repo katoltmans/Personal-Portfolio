@@ -44,9 +44,9 @@ const About = () => {
                                     variant="h6"
                                     sx={{ mb: 2, fontWeight: "normal" }}
                                 >
-                                    I am a coding boot camp graduate who joined
-                                    the world of coding after retiring from
-                                    teaching and fitness. After teaching
+                                    I am a Coding Dojo boot camp graduate who
+                                    joined the world of coding after retiring
+                                    from teaching and fitness. After teaching
                                     remotely for a year, I came to appreciate
                                     the doors tech opens to the world and love
                                     the infinite possibilities it can provide to
@@ -83,9 +83,9 @@ const About = () => {
                                     learn C# in conjunction with the Unity
                                     engine, but found myself wanting to know
                                     more. I took a C# class through Coursera and
-                                    was hooked. I recently completed the a boot
-                                    camp with Coding Dojo to learn full stack
-                                    web development using Python and MERN.
+                                    was hooked. I recently completed a boot camp
+                                    with Coding Dojo to learn full stack web
+                                    development using Python and MERN.
                                 </Typography>
                             </Box>
                         </Stack>
