@@ -22,7 +22,8 @@ const Contact = () => {
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                sx={{ p: 20, pt: 10 }}
+                spacing={2}
+                sx={{ px: 20, py: 7 }}
             >
                 <Grid item xs={12} sm={6} lg={3}>
                     <a
