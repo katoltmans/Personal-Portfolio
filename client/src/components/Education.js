@@ -84,7 +84,7 @@ const Education = () => {
                                 </Typography>
                                 Intensive Full Stack Coding Bootcamp <br />
                                 Top Scores in Mern and Python Stacks <br />
-                                2002
+                                2022
                             </Paper>
                         </Grid>
                     </Grid>

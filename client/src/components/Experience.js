@@ -35,7 +35,7 @@ const Experience = () => {
                         fontWeight: "bold",
                     }}
                 >
-                    (Prior to Coding Dojo boot camp)
+                    (Prior to Coding Dojo bootcamp)
                 </Typography>
                 <Box sx={{ textAlign: "left" }}>
                     <Timeline position={matches ? "alternate" : "right"}>
