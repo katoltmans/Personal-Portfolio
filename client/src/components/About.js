@@ -3,9 +3,30 @@ import { Grid, Paper, Stack, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 
 const About = () => {
+    const paragraphText = {
+        fontWeight: "normal",
+        margin: {
+            xs: "0 0 30px",
+            sm: "0 40px 20px",
+        },
+        fontSize: {
+            xs: "16px",
+            sm: "22px",
+        },
+        textAlign: "justify",
+    };
+
+    const aboutBox = {
+        display: "flex",
+        mx: {
+            xs: 2,
+            sm: 8,
+        },
+    };
+
     return (
         <a id="about">
-            <Box sx={{ p: 5, pt: 10 }}>
+            <Box sx={{ p: 1, pt: 10 }}>
                 <Typography
                     variant="h3"
                     sx={{
@@ -29,21 +50,18 @@ const About = () => {
                 >
                     (She/Her)
                 </Typography>
-                <Box sx={{ display: "flex", mx: 10 }}>
-                    <Stack direction={{ xs: "column", sm: "row" }} spacing={5}>
-                        <Box sx={{ maxWidth: "200px" }}>
+                <Box sx={aboutBox}>
+                    <Stack direction={{ xs: "column", sm: "row" }} spacing={10}>
+                        <Box sx={{ maxWidth: "200px", py: 1, m: "auto" }}>
                             <img
                                 src="/imgs/ProfilePic.jpg"
                                 alt="Kat Oltmans profile picture"
                             />
                         </Box>
 
-                        <Stack direction="column" spacing={2}>
-                            <Box sx={{ px: 10, py: 1 }}>
-                                <Typography
-                                    variant="h6"
-                                    sx={{ mb: 2, fontWeight: "normal" }}
-                                >
+                        <Stack direction="column" spacing={3}>
+                            <Box>
+                                <Typography variant="h6" sx={paragraphText}>
                                     I am a Coding Dojo graduate who joined the
                                     world of coding after retiring from teaching
                                     and fitness. After teaching remotely for a
@@ -54,7 +72,7 @@ const About = () => {
                                 </Typography>
                                 <Typography
                                     variant="h6"
-                                    sx={{ mb: 2, fontWeight: "normal" }}
+                                    sx={paragraphText}
                                     style={{
                                         whiteSpace: "pre-wrap",
                                     }}
@@ -70,7 +88,7 @@ const About = () => {
                                 </Typography>
                                 <Typography
                                     variant="h6"
-                                    sx={{ fontWeight: "normal" }}
+                                    sx={paragraphText}
                                     style={{ whiteSpace: "pre-wrap" }}
                                 >
                                     Along with my technical skills I also have

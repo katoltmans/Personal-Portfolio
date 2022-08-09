@@ -48,7 +48,12 @@ const Education = () => {
                     Education
                 </Typography>
                 <Box sx={{ color: "#fff", my: 7 }}>
-                    <Grid container spacing={10} sx={{ p: 2, mb: 2 }}>
+                    <Grid
+                        container
+                        rowSpacing={{ xs: 1, sm: 10 }}
+                        columnSpacing={10}
+                        sx={{ p: 2, mb: 4 }}
+                    >
                         <Grid item xs={12} sm={5} sx={leftColStyle}>
                             <img
                                 src="/imgs/codingDojoLogo200.jpg"
@@ -83,7 +88,12 @@ const Education = () => {
                             </Paper>
                         </Grid>
                     </Grid>
-                    <Grid container spacing={10} sx={{ mt: 1 }}>
+                    <Grid
+                        container
+                        rowSpacing={{ xs: 1, sm: 10 }}
+                        columnSpacing={10}
+                        sx={{ mt: 1 }}
+                    >
                         <Grid item xs={12} sm={5} sx={leftColStyle}>
                             <img
                                 src="/imgs/pngeggCU200.png"

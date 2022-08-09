@@ -1,11 +1,4 @@
-import {
-    Card,
-    CardContent,
-    CardMedia,
-    Grid,
-    Paper,
-    Typography,
-} from "@mui/material";
+import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 
@@ -17,6 +10,7 @@ const Projects = () => {
     const projectSubtitleStyle = {
         color: "#919191",
         fontSize: "12px",
+        mb: 2,
     };
     const projectLinkStyle = {
         color: "#5ce2e2",
@@ -61,7 +55,7 @@ const Projects = () => {
                                 >
                                     Personal Project
                                 </Typography>
-                                <Typography>
+                                <Typography sx={{ mb: 2 }}>
                                     A website to create and view household tips
                                     and tricks using: Python, Flask, React.js,
                                     and Material UI
@@ -103,13 +97,13 @@ const Projects = () => {
                                 >
                                     Group Project
                                 </Typography>
-                                <Typography>
+                                <Typography sx={{ mb: 2 }}>
                                     A MERN-based app to create/find events to
                                     attend, indicate attendance intention,
                                     comment, and map distance to event.
                                 </Typography>
                                 <Grid container>
-                                    <Grid item xs={12} sm={6}>
+                                    <Grid item xs={12} sm={6} sx={{ mb: 2 }}>
                                         <a
                                             href="http://34.239.132.127/"
                                             target="_blank"

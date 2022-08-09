@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, useMediaQuery, useTheme } from "@mui/material";
 import { Box } from "@mui/system";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
@@ -7,11 +7,15 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 
 const Experience = () => {
+    const theme = useTheme();
+    const matches = useMediaQuery(theme.breakpoints.up("md"));
+
     return (
         <a id="experience">
-            <Box sx={{ p: 5, pt: 5 }}>
+            <Box sx={{ p: 1, pt: 5 }}>
                 <Typography
                     variant="h3"
                     sx={{
@@ -34,8 +38,11 @@ const Experience = () => {
                     (Prior to Coding Dojo boot camp)
                 </Typography>
                 <Box sx={{ textAlign: "left" }}>
-                    <Timeline position="alternate">
+                    <Timeline position={matches ? "alternate" : "right"}>
                         <TimelineItem>
+                            <TimelineOppositeContent
+                                display={matches ? "flex" : "none"}
+                            />
                             <TimelineSeparator>
                                 <TimelineDot
                                     variant="outlined"
@@ -81,6 +88,9 @@ const Experience = () => {
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
+                            <TimelineOppositeContent
+                                display={matches ? "flex" : "none"}
+                            />
                             <TimelineSeparator>
                                 <TimelineDot
                                     variant="outlined"
@@ -127,6 +137,9 @@ const Experience = () => {
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
+                            <TimelineOppositeContent
+                                display={matches ? "flex" : "none"}
+                            />
                             <TimelineSeparator>
                                 <TimelineDot
                                     variant="outlined"
@@ -173,6 +186,9 @@ const Experience = () => {
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
+                            <TimelineOppositeContent
+                                display={matches ? "flex" : "none"}
+                            />
                             <TimelineSeparator>
                                 <TimelineDot
                                     variant="outlined"
@@ -211,6 +227,9 @@ const Experience = () => {
                             </TimelineContent>
                         </TimelineItem>
                         <TimelineItem>
+                            <TimelineOppositeContent
+                                display={matches ? "flex" : "none"}
+                            />
                             <TimelineSeparator>
                                 <TimelineDot
                                     variant="outlined"
