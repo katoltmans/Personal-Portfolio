@@ -93,6 +93,19 @@ const Navbar = () => {
                             </MenuItem>
                         ))}
                     </Menu>
+                    <Box
+                        sx={{
+                            display: "flex",
+                            flexGrow: "1",
+                            justifyContent: "center",
+                            alignItems: "center",
+                            color: "#5ce2e2",
+                        }}
+                    >
+                        <Typography variant="h5" component="h1">
+                            Kat Oltmans
+                        </Typography>
+                    </Box>
                 </Box>
                 <Box
                     sx={{
