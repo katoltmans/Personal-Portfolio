@@ -63,12 +63,13 @@ const About = () => {
                             <Box>
                                 <Typography variant="h6" sx={paragraphText}>
                                     I am a Coding Dojo graduate who joined the
-                                    world of coding after retiring from teaching
-                                    and fitness. After teaching remotely for a
-                                    year, I came to appreciate the doors tech
-                                    opens to the world and love the infinite
-                                    possibilities it can provide to aid in the
-                                    advancement of society.
+                                    world of coding after transitioning from a
+                                    career in education and fitness. While
+                                    adapting to teaching remotely, I came to
+                                    appreciate the doors tech opens to the world
+                                    and the infinite possibilities it can
+                                    provide to aid in the advancement of
+                                    society.
                                 </Typography>
                                 <Typography
                                     variant="h6"
@@ -80,32 +81,32 @@ const About = () => {
                                     In 2020, I was tasked with the challenge of
                                     creating an online classroom environment
                                     with very little technical experience or
-                                    guidance while managing my online students
-                                    throughout the year. This experience opened
-                                    my eyes to my ability to quickly acquire
-                                    computer skills and the role tech can play
-                                    in shaping the next generation.
+                                    guidance while also managing my online
+                                    students throughout the year. This
+                                    experience opened my eyes to my ability to
+                                    quickly acquire computer skills and the role
+                                    tech can play in shaping the next
+                                    generation.
                                 </Typography>
                                 <Typography
                                     variant="h6"
                                     sx={paragraphText}
                                     style={{ whiteSpace: "pre-wrap" }}
                                 >
-                                    Along with my technical skills I also have
+                                    Along with my technical skills, I also have
                                     12 years of experience collaborating with
-                                    teams of coworkers, adhering to given
+                                    teams of coworkers and adhering to given
                                     deadlines while monitoring progress towards
                                     meeting benchmarks. I maintained regular
                                     communication with and provided consistent
                                     progress updates to clients and
                                     stakeholders, and have excellent time
-                                    management and organizational skills. Within
-                                    the fitness industry we push ourselves to
-                                    build our grit and keep pressing forward to
-                                    achieve our goals even when the going gets
-                                    tough. I would like the opportunity to bring
-                                    my encouraging, “can-do” attitude to your
-                                    team.
+                                    management and organizational skills.
+                                    Continuous learning and grit not only form
+                                    the foundation of education and fitness, but
+                                    are keys to success in the tech industry. I
+                                    would like the opportunity to bring my
+                                    encouraging, “can-do” attitude to your team.
                                 </Typography>
                             </Box>
                         </Stack>
