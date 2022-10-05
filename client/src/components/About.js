@@ -54,7 +54,7 @@ const About = () => {
                     <Stack direction={{ xs: "column", sm: "row" }} spacing={10}>
                         <Box sx={{ maxWidth: "200px", py: 1, m: "auto" }}>
                             <img
-                                src="/imgs/ProfilePic.jpg"
+                                src="/imgs/unaskedPic.jpg"
                                 alt="Kat Oltmans profile picture"
                             />
                         </Box>
