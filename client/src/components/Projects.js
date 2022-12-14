@@ -40,11 +40,16 @@ const Projects = () => {
                 <Grid container spacing={5}>
                     <Grid item xs={12} sm={6}>
                         <Card sx={{ p: 2, height: "90%" }}>
-                            <CardMedia
-                                component="img"
-                                image="/imgs/HomemadeHacks.png"
-                                alt="join In Project"
-                            />
+                            <a
+                                href="https://github.com/katoltmans/Homemade-Hacks/"
+                                target="_blank"
+                            >
+                                <CardMedia
+                                    component="img"
+                                    image="/imgs/HomemadeHacks.png"
+                                    alt="join In Project"
+                                />
+                            </a>
                             <CardContent>
                                 <Typography variant="H6" sx={projectTitleStyle}>
                                     Homemade Hacks
@@ -82,11 +87,13 @@ const Projects = () => {
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Card sx={{ p: 2, maxwidth: 345, height: "90%" }}>
-                            <CardMedia
-                                component="img"
-                                image="/imgs/JoinIn.png"
-                                alt="join In Project"
-                            />
+                            <a href="http://34.239.132.127/" target="_blank">
+                                <CardMedia
+                                    component="img"
+                                    image="/imgs/JoinIn.png"
+                                    alt="join In Project"
+                                />
+                            </a>
                             <CardContent>
                                 <Typography variant="H6" sx={projectTitleStyle}>
                                     Join In
