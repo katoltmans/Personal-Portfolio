@@ -41,7 +41,7 @@ const Projects = () => {
                     <Grid item xs={12} sm={6}>
                         <Card sx={{ p: 2, height: "90%" }}>
                             <a
-                                href="https://github.com/katoltmans/Homemade-Hacks/"
+                                href="https://katoltmans.pythonanywhere.com/hacks/view"
                                 target="_blank"
                             >
                                 <CardMedia
@@ -68,9 +68,13 @@ const Projects = () => {
 
                                 <Grid container alignItems="bottom">
                                     <Grid item xs={12} sm={6}>
-                                        {/* <a href="" style={projectLinkStyle}>
-                                            Homemade Hacks Site
-                                        </a> */}
+                                        <a
+                                            href="https://katoltmans.pythonanywhere.com/hacks/view"
+                                            target="_blank"
+                                            style={projectLinkStyle} rel="noreferrer"
+                                        >
+                                            HomemadeHacks Site
+                                        </a>
                                     </Grid>
                                     <Grid item xs={12} sm={6}>
                                         <a
