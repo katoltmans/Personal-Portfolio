@@ -23,8 +23,7 @@ const Projects = () => {
 
     return (
         <>
-            <a id="projects"> </a>
-            <Box sx={{ p: 5, pt: 5 }}>
+            <Box sx={{ p: 5, pt: 5 }}  id="projects">
                 <Typography
                     variant="h3"
                     sx={{
@@ -42,7 +41,7 @@ const Projects = () => {
                         <Card sx={{ p: 2, height: "90%" }}>
                             <a
                                 href="https://katoltmans.pythonanywhere.com/hacks/view"
-                                target="_blank"
+                                target="_blank" rel="noreferrer"
                             >
                                 <CardMedia
                                     component="img"
@@ -80,7 +79,7 @@ const Projects = () => {
                                         <a
                                             href="https://github.com/katoltmans/Homemade-Hacks/"
                                             target="_blank"
-                                            style={projectLinkStyle}
+                                            style={projectLinkStyle} rel="noreferrer"
                                         >
                                             GitHub
                                         </a>
@@ -91,7 +90,7 @@ const Projects = () => {
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <Card sx={{ p: 2, maxwidth: 345, height: "90%" }}>
-                            <a href="http://34.239.132.127/" target="_blank">
+                            <a href="http://34.239.132.127/" target="_blank" rel="noreferrer">
                                 <CardMedia
                                     component="img"
                                     image="/imgs/JoinIn.png"
@@ -118,7 +117,7 @@ const Projects = () => {
                                         <a
                                             href="http://34.239.132.127/"
                                             target="_blank"
-                                            style={projectLinkStyle}
+                                            style={projectLinkStyle} rel="noreferrer"
                                         >
                                             Join In Site
                                         </a>
@@ -127,7 +126,7 @@ const Projects = () => {
                                         <a
                                             href="https://github.com/katoltmans/Find-Me-in-Events/"
                                             target="_blank"
-                                            style={projectLinkStyle}
+                                            style={projectLinkStyle} rel="noreferrer"
                                         >
                                             GitHub
                                         </a>
